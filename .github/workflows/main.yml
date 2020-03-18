@@ -14,3 +14,16 @@ jobs:
       - name: print
         run: echo "The duration is ${{ steps.millis.outputs.duration }}"
 
+  job2:
+    runs-on: ubuntu-latest
+    name: test from duration
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: compute
+        uses: ./
+        id: millis
+        with:
+          from: '2020-03-13T22:09:13Z'
+      - name: print
+        run: echo "The duration is ${{ steps.millis.outputs.duration }}"
