@@ -12,5 +12,5 @@ jobs:
         with:
           millis: 12000
       - name: print
-        run: echo "The duration is ${{ steps.millis.output.duration }}"
+        run: echo "The duration is ${{ steps.millis.outputs.duration }}"
 
