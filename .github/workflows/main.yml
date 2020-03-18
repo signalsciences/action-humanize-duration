@@ -1,0 +1,16 @@
+on: [push]
+job:
+  job1:
+    runs-on: ubuntu-latest
+    name: test millis duration
+    steps:
+      - name: checkout
+        uses: actions/checkouti@v2
+      - name: compute
+        uses: ./
+        id: millis
+        with:
+          millis: 12000
+      - name: print
+        run: echo "The duration is ${{ steps.millis.output.duration }}"
+
