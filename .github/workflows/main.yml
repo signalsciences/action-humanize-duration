@@ -25,6 +25,8 @@ jobs:
         id: millis
         with:
           from: '2020-03-13T22:09:13Z'
+          config: |
+             { largest: 2 }
       - name: print
         run: echo "The duration is ${{ steps.millis.outputs.duration }}"
 
