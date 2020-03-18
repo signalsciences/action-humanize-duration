@@ -1,0 +1,24 @@
+{
+  "name": "action-humanize-duration",
+  "version": "1.0.0",
+  "description": "Use humanize-duration in a github action",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/signalsciences/action-humanize-duration.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/signalsciences/action-humanize-duration/issues"
+  },
+  "homepage": "https://github.com/signalsciences/action-humanize-duration#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.3",
+    "humanize-duration": "^3.22.0"
+  }
+}

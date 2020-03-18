@@ -1,0 +1,14 @@
+name: '??'
+description: 'humanize durations in github actions'
+inputs:
+  millis:
+    description: 'duration in milliseconds'
+    required: false
+    default: NaN
+outputs:
+  duration: # id of output
+    description: 'duration in human terms'
+runs:
+  using: 'node12'
+  main: 'index.js'
+ 
