@@ -5,7 +5,7 @@ try {
   var millis = parseInt(core.getInput('millis'));
   if (isNaN(millis)) {
 	  var now = Date.now();
-	  var from = Data.parse(core.getInput('from'));
+	  var from = Date.parse(core.getInput('from'));
 	  millis = now - from;
   }
   core.setOutput("duration", humanizeDuration(millis));
