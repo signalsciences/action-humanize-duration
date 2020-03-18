@@ -5,7 +5,7 @@ jobs:
     name: test millis duration
     steps:
       - name: checkout
-        uses: actions/checkouti@v2
+        uses: actions/checkout@v2
       - name: compute
         uses: ./
         id: millis
