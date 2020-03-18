@@ -27,3 +27,4 @@ jobs:
           from: '2020-03-13T22:09:13Z'
       - name: print
         run: echo "The duration is ${{ steps.millis.outputs.duration }}"
+

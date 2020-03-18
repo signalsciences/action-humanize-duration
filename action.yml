@@ -10,7 +10,6 @@ inputs:
   config:
     description: 'humanize configuraiton'
     required: false
-    default: {}
 outputs:
   duration: # id of output
     description: 'duration in human terms'
