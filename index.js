@@ -8,7 +8,7 @@ try {
 	  var from = Date.parse(core.getInput('from'));
 	  millis = now - from;
   }
-  core.setOutput("duration", humanizeDuration(millis, core.getInput('config')));
+  core.setOutput("duration", humanizeDuration(millis, JSON.parse(core.getInput('config'))));
 } catch (error) {
   core.setFailed(error.message);
 }
