@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/signalsciences/action-humanize-duration#readme",
   "dependencies": {
-    "@actions/core": "^1.2.3",
+    "@actions/core": "^1.2.6",
     "humanize-duration": "^3.22.0"
   }
 }
